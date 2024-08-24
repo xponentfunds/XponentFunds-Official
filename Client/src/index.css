@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Azonix";
+    src: url("./assets/Fonts/Azonix.otf");
+}
+
+
+.custom-text {
+    background: linear-gradient(90.27deg, #C600F6 3.97%, #E67EFF 27.78%, #0025DA 61.21%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.btn {
+    @apply font-Title text-base md:text-lg xl:text-xl bg-custom-gradient rounded-[45px] px-7 py-4 text-white hover:bg-gradient-to-r transition-all duration-300 ease-in-out hover:scale-105;
+}
+
+.btnwhite {
+    @apply font-Title text-base bg-white rounded-[45px] px-7 py-2 transition-all duration-300 ease-in-out hover:scale-105;
+}
+
+.btncustom {
+    @apply font-Title text-base md:text-lg xl:text-xl bg-white rounded-[45px] px-7 py-4 transition-all duration-300 ease-in-out hover:scale-105;
+}
+
+.Typewriter__wrapper {
+    background: linear-gradient(90.27deg, #C600F6 3.97%, #E67EFF 27.78%, #0025DA 61.21%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.Typewriter__cursor {
+    background: linear-gradient(90.27deg, #C600F6 3.97%, #E67EFF 27.78%, #0025DA 61.21%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+
+.gradient-text {
+    background: linear-gradient(90deg, #6000AB 14.89%, #FB4BFF 50.67%, #5300DA 84.63%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hover-gradient-text {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(90.21deg, #83249A 21.39%, #0025DA 99.82%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color 0.3s ease;
+}
+
+/* .hover-gradient-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.hover-gradient-text:hover::after {
+    color: transparent;
+} */
+
+/* global.css */
+.gradient-border {
+    position: relative;
+
+    border: 3px solid transparent;
+    border-image: linear-gradient(180deg, #5300DA 0%, #A300CA 41%, #0025DA 100%);
+    border-image-slice: 1;
+    border-radius: 25px;
+    /* Adjust the radius as needed */
+}
+
+
+
+
+@media (max-width: 1023px) {
+    .custom-center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) !important;
+    }
+}
+
+/* .swiper-slide {
+    width: auto !important;
+  }
+   */
+  .mySwiper {
+    overflow: hidden;
+  }
+  
+  .blogcss{
+    width: 100%;
+  }
