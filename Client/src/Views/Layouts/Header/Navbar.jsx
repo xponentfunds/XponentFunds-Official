@@ -20,10 +20,10 @@ function Navbar() {
 
   const linkPaths = {
     HOME: "/",
-    WEBINAR: "/webinar",
-    COURSES: "/courses",
-    CONTACT: "/contact",
-    BLOG: "/blog",
+    WEBINAR: "webinar",
+    COURSES: "courses",
+    CONTACT: "contact",
+    BLOG: "blog",
   };
 
   useEffect(() => {
