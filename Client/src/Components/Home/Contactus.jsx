@@ -93,7 +93,7 @@ function Contactus() {
     <>
       <section className="bg-[#201E1E] py-8 md:py-16 px-4 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 mx-auto container gap-12 md:gap-24">
-          <div className="order-2 md:order-1 flex flex-col gap-3 md:gap-6 lg:gap-9 bg-contact-linear rounded-[25px] px-5 md:px-9 py-8 md:py-14 text-white">
+          <div className=" flex flex-col gap-3 md:gap-6 lg:gap-9 bg-contact-linear rounded-[25px] px-5 md:px-9 py-8 md:py-14 text-white">
             <h2 className="font-Title text-2xl md:text-3xl lg:text-4xl">
               Get in touch
             </h2>
@@ -124,6 +124,7 @@ function Contactus() {
                   href="http://instagram.com/xponentfunds"
                   target="_blank"
                   rel=""
+                   aria-label="Visit Our instagram account"
                 >
                   <svg
                     width="19"
@@ -146,7 +147,7 @@ function Contactus() {
                     </defs>
                   </svg>{" "}
                 </a>
-                <a href="http://facebook.com/xponentfunds" target="_blank">
+                <a href="http://facebook.com/xponentfunds" target="_blank"  aria-label="Visit Our facebook page">
                   <svg
                     className="transform transition-transform duration-300 hover:scale-125 hover:text-blue-700 cursor-pointer"
                     width="19"
@@ -171,6 +172,7 @@ function Contactus() {
                 <a
                   href="https://www.linkedin.com/company/xponent-fund-management/ "
                   target="_blank"
+                   aria-label="Visit Our linkedin company"
                 >
                   <svg
                     width="18"
@@ -196,6 +198,7 @@ function Contactus() {
                 <a
                   href="https://youtube.com/@xponentfunds?feature=shared"
                   target="_blank"
+                   aria-label="Visit Our youtube"
                 >
                   <svg
                     width="18"
@@ -214,7 +217,7 @@ function Contactus() {
               </li>
             </div>
           </div>
-          <div className="order-1 md:order-2 flex justify-center items-center  ">
+          <div className=" flex justify-center items-center  ">
             <form
               onSubmit={handleSubmit}
               className="px-8 w-full flex flex-col gap-5 md:gap-9"
@@ -272,6 +275,7 @@ function Contactus() {
                   name="profession"
                   value={formData.profession}
                   onChange={handleChange}
+                  aria-label="profession"
                   className="rounded-lg border-[#CBCBCB] border-[1px] w-full px-3 py-2 bg-transparent  focus:outline-none font-poppins text-white text-sm md:text-base lg:text-lg xl:text-xl"
                   required
                 >
@@ -307,6 +311,7 @@ function Contactus() {
                   name="experience"
                   value={formData.experience}
                   onChange={handleChange}
+                  aria-label="experience"
                   className="rounded-lg border-[#CBCBCB] border-[1px] w-full px-3 py-2 bg-transparent  focus:outline-none font-poppins text-white text-sm md:text-base lg:text-lg xl:text-xl"
                   required
                 >

@@ -20,10 +20,10 @@ function Navbar() {
 
   const linkPaths = {
     HOME: "/",
-    WEBINAR: "webinar",
-    COURSES: "courses",
-    CONTACT: "contact",
-    BLOG: "blog",
+    WEBINAR: "/webinar",
+    COURSE: "/course",
+    CONTACT: "/contact",
+    BLOG: "/blog",
   };
 
   useEffect(() => {
@@ -80,8 +80,9 @@ function Navbar() {
                   />
                 </a>
               </div>
-              {["HOME", "WEBINAR", "COURSES", "CONTACT", "BLOG"].map(
+              {["HOME", "WEBINAR", "COURSE", "CONTACT", "BLOG"].map(
                 (link, index) => (
+                  <li>
                   <Link
                     to={linkPaths[link]}
                     className={`font-Title font-normal text-base transition-all duration-300 ease-in-out ${
@@ -101,6 +102,7 @@ function Navbar() {
                       {link}
                     </span>
                   </Link>
+                  </li>
                 )
               )}
             </ul>

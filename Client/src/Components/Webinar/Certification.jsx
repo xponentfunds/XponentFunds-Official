@@ -1,5 +1,6 @@
 import React from "react";
-import bg from "../../assets/Images/Webinarbg2.png";
+// import bg from "../../assets/Images/Webinarbg2.png";
+import bg from "../../assets/Images/Webinarbg21.png";
 import certificate from "../../assets/Images/Certificate.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";

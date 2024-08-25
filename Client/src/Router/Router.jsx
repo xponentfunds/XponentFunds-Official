@@ -50,7 +50,7 @@ function Router() {
           ),
         },
         {
-          path: "/courses",
+          path: "/course",
           element: (
             <Suspense fallback={<Loader />}>
               <Courses />

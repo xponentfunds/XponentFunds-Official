@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import bg from "../../../assets/Images/Group 80.png";
+// import bg from "../../../assets/Images/Group 80.png";
+import bg from "../../../assets/Images/Group 801.png";
 import bg1 from "../../../assets/Images/Rectangle 195.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -153,6 +154,7 @@ function Contact() {
                   href="http://instagram.com/xponentfunds"
                   target="_blank"
                   rel=""
+                  aria-label="Visit Our instagram"
                 >
                   <svg
                     width="19"
@@ -175,7 +177,11 @@ function Contact() {
                     </defs>
                   </svg>{" "}
                 </a>
-                <a href="http://facebook.com/xponentfunds" target="_blank">
+                <a
+                  href="http://facebook.com/xponentfunds"
+                  target="_blank"
+                  aria-label="Visit Our facebook page"
+                >
                   <svg
                     className="transform transition-transform duration-300 hover:scale-125 hover:text-blue-700 cursor-pointer"
                     width="19"
@@ -200,6 +206,7 @@ function Contact() {
                 <a
                   href="https://www.linkedin.com/company/xponent-fund-management/ "
                   target="_blank"
+                   aria-label="Visit Our linkedin company"
                 >
                   <svg
                     width="18"
@@ -225,6 +232,7 @@ function Contact() {
                 <a
                   href="https://youtube.com/@xponentfunds?feature=shared"
                   target="_blank"
+                   aria-label="Visit Our youtube"
                 >
                   <svg
                     width="18"
@@ -301,6 +309,7 @@ function Contact() {
                   name="profession"
                   value={formData.profession}
                   onChange={handleChange}
+                  aria-label="profession"
                   className="rounded-lg border-[#CBCBCB] border-[1px] w-full px-3 py-2 bg-transparent  focus:outline-none font-poppins text-white text-sm md:text-base lg:text-lg xl:text-xl"
                   required
                 >
@@ -336,6 +345,7 @@ function Contact() {
                   name="experience"
                   value={formData.experience}
                   onChange={handleChange}
+                  aria-label="experience"
                   className="rounded-lg border-[#CBCBCB] border-[1px] w-full px-3 py-2 bg-transparent  focus:outline-none font-poppins text-white text-sm md:text-base lg:text-lg xl:text-xl"
                   required
                 >

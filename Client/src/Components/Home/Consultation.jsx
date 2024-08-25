@@ -1,5 +1,6 @@
 import React from "react";
-import prop from "../../assets/Images/Rectangle 44.png";
+// import prop from "../../assets/Images/Rectangle 44.png";
+import prop from "../../assets/Images/Rectangle 441.png";
 import transparent from "../../assets/Images/Rectangle 13.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

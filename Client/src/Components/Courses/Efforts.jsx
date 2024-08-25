@@ -108,12 +108,12 @@ function Efforts() {
           <div className="marqueewrapper">
             {[...logos, ...logos].map((obj, index) => (
               <div key={index} className="logitem">
-                <LazyLoadImage
+                <img
                   src={obj.logo}
                   alt=""
                   className="logo"
-                  PlaceholderSrc={obj.PlaceholderImage}
-                  effect="blur"
+                  // PlaceholderSrc={obj.PlaceholderImage}
+                  // effect="blur"
                 />
               </div>
             ))}

@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import shades from "../../assets/Images/Group 81.png";
+// import shades from "../../assets/Images/Group 81.png";
+import shades from "../../assets/Images/Group 811.png";
 import mobileview1 from "../../assets/Images/mobileView.png";
 import desktopview1 from "../../assets/Images/desktopView.png";
-import shades1 from "../../assets/Images/Ellipse 17.png";
-import shades2 from "../../assets/Images/Ellipse 21.png";
+// import shades1 from "../../assets/Images/Ellipse 17.png";
+// import shades2 from "../../assets/Images/Ellipse 21.png";
+import shades1 from "../../assets/Images/Ellipse 171.png";
+import shades2 from "../../assets/Images/Ellipse 211.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Intro() {
@@ -30,7 +33,7 @@ function Intro() {
           <LazyLoadImage
             src={shades}
             alt=""
-            className="absolute -z-10 w-full h-full"
+            className="absolute z-0 w-full h-full"
           />
           <LazyLoadImage
             src={mobileview1}

@@ -7,7 +7,7 @@ function Whoarewe() {
   return (
     <section className="bg-[#000000] relative overflow-hidden ">
       <main className=" mx-auto container px-4 md:px-0 pt-12 md:pt-24 pb-12">
-        <div className=" grid grid-col-1 lg:grid-cols-3 gap-8 py-10">
+        <div className=" grid grid-col-1 lg:grid-cols-3 gap-8 md:py-10">
           <div className=" lg:col-span-1">
             <div className="flex flex-col gap-7 text-white">
               <h5

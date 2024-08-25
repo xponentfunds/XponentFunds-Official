@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
-import heroImg from "../../assets/Images/heroimg.png";
+// import heroImg from "../../assets/Images/heroimg.png";
+import heroImg from "../../assets/Images/heroimg1.png";
 import tradesvg from "../../assets/Svg/Trade.svg";
 import { Link } from "react-router-dom";
 import tradesvg2 from "../../assets/Svg/Trade2.svg";
@@ -12,7 +13,7 @@ import blurtrade2 from "../../assets/BlurImg/trade-accuracy (1).jpg";
 function Herosection() {
   return (
     <>
-      <section className="bg-[#201E1E] relative min-h-screen  overflow-hidden ">
+      <section className="bg-[#201E1E] relative  overflow-hidden ">
         <div className="grid grid-cols-1 md:grid-cols-3  container mx-auto px-4 md:px-0 pt-28 md:pt-48  lg:pt-64 pb-28 md:pb-32 lg:pb-44">
           <div className="col-span-2">
             <div className="flex flex-col gap-7">
@@ -37,7 +38,7 @@ function Herosection() {
                 traders with the Super Trader Program. Get unlimited access to
                 powerful institutional trading ideas.
               </h2>
-              <Link to="courses">
+              <Link to="course">
                 <button
                   className="font-Title text-base lg:text-lg xl:text-xl bg-custom-gradient rounded-[45px] px-7 py-4 text-white self-start hover:bg-gradient-to-r  transition-all duration-300 ease-in-out hover:scale-105 "
                   // onClick={() => setIsOpen(true)}
@@ -61,12 +62,12 @@ function Herosection() {
             />
             <LazyLoadImage
               src={heroImg}
-              PlaceholderSrc={blurhero}
+              // PlaceholderSrc={blurhero}
               // effect="blur"
               className=" absolute w-[370px] h-[500px] md:w-[360px] md:h-[580px] lg:w-[510px] lg:h-[680px]  xl:w-[540px] xl:h-[700px] right-0 bottom-0  z-0"
               alt="Trading app"
-              // data-aos="fade-left"
-              // data-aos-duration="1000"
+              data-aos="fade-left"
+              data-aos-duration="1000"
             />
 
             <LazyLoadImage

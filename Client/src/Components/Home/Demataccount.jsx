@@ -60,7 +60,7 @@ function Demataccount() {
               className="absolute z-10   left-[55%] md:left-[430px] lg:left-[300px] xl:left-[360px]  w-[150px] md:w-auto  lg:w-[180px] xl:w-[220px] top-[22%] md:top-[26%] lg:top-[33%] xl:top-[35%]"
             />
           </div>
-          <div className="flex flex-col gap-5 text-white mt-14 md:mt-0">
+          <div className="flex flex-col gap-5 text-white mt-6 md:mt-0">
             <h3
               className="font-Title text-xl md:tex-2xl xl:text-3xl "
               data-aos="fade-left"

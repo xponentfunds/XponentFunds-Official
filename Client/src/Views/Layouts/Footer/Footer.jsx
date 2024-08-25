@@ -28,6 +28,7 @@ function Footer() {
                   href="http://instagram.com/xponentfunds"
                   target="_blank"
                   rel=""
+                  aria-label="Visit Our Instagram"
                 >
                   <svg
                     width="19"
@@ -50,7 +51,11 @@ function Footer() {
                     </defs>
                   </svg>{" "}
                 </a>
-                <a href="http://facebook.com/xponentfunds" target="_blank">
+                <a
+                  href="http://facebook.com/xponentfunds"
+                  target="_blank"
+                  aria-label="Visit Our facebook"
+                >
                   <svg
                     className="transform transition-transform duration-300 hover:scale-125 hover:text-blue-700 cursor-pointer"
                     width="19"
@@ -75,6 +80,7 @@ function Footer() {
                 <a
                   href="https://www.linkedin.com/company/xponent-fund-management/ "
                   target="_blank"
+                  aria-label="Visit Our Linkedin Account"
                 >
                   <svg
                     width="18"
@@ -100,6 +106,7 @@ function Footer() {
                 <a
                   href="https://youtube.com/@xponentfunds?feature=shared"
                   target="_blank"
+                  aria-label="Visit Our youtube"
                 >
                   <svg
                     width="18"
@@ -124,54 +131,46 @@ function Footer() {
               <li className="font-poppins font-medium text-base md:text-lg md:leading-7 ">
                 Company
               </li>
-              <a href="/blog">
-                <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]  cursor-pointer hover:text-white">
-                  Blogs
-                </li>
-              </a>
-              <a href="/courses">
-                <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]   cursor-pointer hover:text-white">
-                  Courses
-                </li>
-              </a>
-              <a href="/webinar">
-                <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]   cursor-pointer hover:text-white">
-                  Webinar
-                </li>
-              </a>
-              <a href="/contact">
-                <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]   cursor-pointer hover:text-white">
-                  Contact
-                </li>
-              </a>
+
+              <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]  cursor-pointer hover:text-white">
+                <a href="/blog">Blogs</a>
+              </li>
+
+              <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]   cursor-pointer hover:text-white">
+                <a href="/course">Course</a>
+              </li>
+
+              <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]   cursor-pointer hover:text-white">
+                <a href="/webinar">Webinar</a>
+              </li>
+
+              <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]   cursor-pointer hover:text-white">
+                <a href="/contact">Contact</a>
+              </li>
             </ul>
             <ul className="flex flex-col gap-5">
               <li className="font-poppins font-medium text-base md:text-lg md:leading-7">
                 Legal
               </li>
 
-              <a href="/termsandconditions">
-                <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]  cursor-pointer hover:text-white">
-                  Terms and Conditions
-                </li>
-              </a>
-              <a href="/privacypolicy">
-                <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]  cursor-pointer hover:text-white">
-                  Privacy Policy
-                </li>
-              </a>
-              <a href="/returnRefundpolicy">
-                <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]  cursor-pointer hover:text-white">
-                  Return refund Policy
-                </li>
-              </a>
+              <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]  cursor-pointer hover:text-white">
+                <a href="/termsandconditions">Terms and Conditions</a>
+              </li>
+
+              <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]  cursor-pointer hover:text-white">
+                <a href="/privacypolicy">Privacy Policy</a>
+              </li>
+
+              <li className="text-[#777777] font-poppins text-sm md:text-base md:leading-[24px]  cursor-pointer hover:text-white">
+                <a href="/returnRefundpolicy">Return refund Policy</a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className=" bg-[#000000] container mx-auto">
+      <div className=" bg-black container mx-auto">
         <div className="flex flex-col md:flex-row justify-between font-poppins text-xs md:text-base md:leading-[24px]  opacity-50 border-t border-[#ffffff] py-4 gap-2">
-          <p className="opacity-50 text-white flex justify-center">
+          <p className="opacity-90 text-white flex justify-center">
             2024 All rights reserved
           </p>
         </div>

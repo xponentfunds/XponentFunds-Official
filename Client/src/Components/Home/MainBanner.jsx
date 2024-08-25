@@ -1,5 +1,6 @@
 import React from "react";
-import bg from "../../assets/Images/Group 40.png";
+// import bg from "../../assets/Images/Group 40.png";
+import bg from "../../assets/Images/Group 401.png";
 import mobile from "../../assets/Images/mobile.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
