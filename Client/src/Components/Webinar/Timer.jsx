@@ -38,7 +38,7 @@ function Timer() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="mx-auto container py-12 px-4 md:px-0 md:py-24 ">
+      <div className="mx-auto container py-12 px-4 md:px-6 lg:px-10 md:py-24 ">
         <div className="flex flex-col gap-3 md:gap-5 lg:gap-8 items-center justify-center">
           <h2
             className="text-2xl md:text-3xl  lg:text-[40px]  font-Title text-white text-center"

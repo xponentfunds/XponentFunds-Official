@@ -44,6 +44,16 @@ function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    // Cleanup class on unmount
+    return () => document.body.classList.remove("overflow-hidden");
+  }, [isOpen]);
+
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -61,6 +71,7 @@ function Home() {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
+        onClose: () => setIsOpen(false),
       });
       return;
     }
@@ -86,7 +97,10 @@ function Home() {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          onClose: () => setIsOpen(false),
+          onClose: () => {
+            setIsOpen(false);
+            toast.dismiss(); // Dismiss toasts when modal closes
+          },
         });
         setFormData({
           name: "",
@@ -102,12 +116,19 @@ function Home() {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
+          onClose: () => setIsOpen(false),
         });
       }
     } catch (error) {
       toast.error("An error occurred. Please try again later.", {
         position: "top-right",
         autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        onClose: () => setIsOpen(false),
       });
     }
   };
@@ -115,7 +136,7 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Your Financial Partner | Xponent Funds</title>
+        <title>Xponent Funds | Your Financial Partner</title>
         <meta
           name="description"
           content="Join the Super Trader Program to access exclusive institutional trading ideas and insights. Discover the secrets of top 1% professional traders and elevate your trading strategies. Get started today for unlimited access!"
@@ -133,9 +154,21 @@ function Home() {
       <div ref={dematRef}>
         <Demataccount />
       </div>
-      {isOpen && (
+      {/* {isOpen && (
         <Modal
           setIsOpen={setIsOpen}
+          formData={formData}
+          handleInputChange={handleInputChange}
+          handleFormSubmit={handleFormSubmit}
+        />
+      )} */}
+
+      {isOpen && (
+        <Modal
+          setIsOpen={(state) => {
+            setIsOpen(state);
+            if (!state) toast.dismiss(); // Dismiss toasts when the modal closes
+          }}
           formData={formData}
           handleInputChange={handleInputChange}
           handleFormSubmit={handleFormSubmit}

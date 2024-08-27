@@ -114,14 +114,14 @@ function Contact() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="mx-auto container py-12 md:py-24 px-4 md:px-0 flex justify-center items-center h-full ">
+          <div className="mx-auto container py-12 md:py-24 px-4 md:px-6 lg:px-10 flex justify-center items-center h-full ">
             <h1 className="font-Title text-2xl md:text-3xl lg:text-4xl xl:text-[45px] text-white ">
               Contact us
             </h1>
           </div>
         </section>
       </div>
-      <section className="bg-[#201E1E] py-12 md:py-24 px-4 md:px-0">
+      <section className="bg-[#201E1E] py-12 md:py-24 px-4 md:px-6 lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 mx-auto container gap-12 md:gap-24">
           <div className="order-2 md:order-1 flex flex-col gap-3 md:gap-6 lg:gap-9 bg-contact-linear rounded-[25px] px-5 md:px-9 py-8 md:py-14 text-white">
             <h2 className="font-Title text-2xl md:text-3xl lg:text-4xl">
@@ -206,7 +206,7 @@ function Contact() {
                 <a
                   href="https://www.linkedin.com/company/xponent-fund-management/ "
                   target="_blank"
-                   aria-label="Visit Our linkedin company"
+                  aria-label="Visit Our linkedin company"
                 >
                   <svg
                     width="18"
@@ -232,7 +232,7 @@ function Contact() {
                 <a
                   href="https://youtube.com/@xponentfunds?feature=shared"
                   target="_blank"
-                   aria-label="Visit Our youtube"
+                  aria-label="Visit Our youtube"
                 >
                   <svg
                     width="18"

@@ -15,7 +15,7 @@ function MainBanner() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="mx-auto container py-12 px-4 md:px-0 ">
+      <div className="mx-auto container py-12 px-4 md:px-6  lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="order-2 md:order-1 h-60 md:h-0">
             <LazyLoadImage

@@ -14,7 +14,7 @@ function Learn() {
   ];
   return (
     <section className="bg-[#201E1E] overflow-hidden ">
-      <main className="container mx-auto px-4 md:px-0 py-12 md:py-24">
+      <main className="container mx-auto px-4 md:px-6 lg:px-10 py-12 md:py-24">
         <div className="flex flex-col gap-3 md:gap-5">
           <h2
             className="font-Title text-2xl md:text-3xl lg:text-4xl xl:text-[45px] text-white"

@@ -10,7 +10,7 @@ const BlogPost = () => {
   if (!blog) return <p>Blog not found</p>;
 
   return (
-    <div className="bg-[#201E1E] py-20 md:py-28 px-5 md:px-0">
+    <div className="bg-[#201E1E] py-20 md:py-28 px-5 md:px-6 lg:px-10">
       <section className="container mx-auto ">
         <div className=" text-white flex flex-col gap-3 md:gap-5">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-Title  ">

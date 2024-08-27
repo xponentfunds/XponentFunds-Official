@@ -4,7 +4,7 @@ function Modal({ setIsOpen, formData, handleInputChange, handleFormSubmit }) {
   return (
     <div
       id="modal"
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50"
     >
       <div className="bg-[#0E1217] border-[#686868] border rounded-3xl  px-4  md:px-6 lg:px-8 py-6 md:py-8 lg:py-10 relative">
         <svg

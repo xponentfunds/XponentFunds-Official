@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="bg-[#000000]">
-      <div className=" text-white px-4 md:px-0 py-8 md:py-14 overflow-x-hidden  container mx-auto">
+      <div className=" text-white px-4 md:px-6 lg:px-10 py-8 md:py-14 overflow-x-hidden  container mx-auto">
         <div className="flex flex-col gap-5  md:flex-row md:justify-between lg:flex-row lg:justify-between ">
           <div className=" flex  flex-col   justify-between md:justify-start md:items-start  gap-2 ">
             <ul className="flex flex-col gap-5">
@@ -169,9 +169,12 @@ function Footer() {
         </div>
       </div>
       <div className=" bg-black container mx-auto">
-        <div className="flex flex-col md:flex-row justify-between font-poppins text-xs md:text-base md:leading-[24px]  opacity-50 border-t border-[#ffffff] py-4 gap-2">
+        <div className="flex flex-row justify-between font-poppins text-xs md:text-base md:leading-[24px]  opacity-50 border-t border-[#ffffff] py-4 gap-2 px-4 md:px-6 lg:px-10">
           <p className="opacity-90 text-white flex justify-center">
-            2024 All rights reserved
+            2024 All rights reserved 
+          </p>
+          <p className="opacity-90 text-white flex justify-center">
+          &copy; REDMOTIONTECH
           </p>
         </div>
       </div>

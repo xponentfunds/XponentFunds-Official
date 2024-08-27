@@ -12,7 +12,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Intro() {
   return (
-    <div className="bg-[#201E1E] pt-24 md:pt-32 px-4 md:px-0  pb-10 md:pb-32 relative overflow-hidden">
+    <div className="bg-[#201E1E] pt-24 md:pt-32 px-4 md:px-6 lg:px-10  pb-10 md:pb-32 relative overflow-hidden">
       <section className="block md:hidden ">
         <div className="flex flex-col gap-4  text-white justify-center items-center">
           <button

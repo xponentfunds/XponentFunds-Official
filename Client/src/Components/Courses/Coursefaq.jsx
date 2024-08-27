@@ -44,7 +44,7 @@ const AccordionItem = ({ title, children }) => {
 function Coursefaq() {
   return (
     <section className="bg-[#201E1E] overflow-hidden ">
-      <main className="container mx-auto px-4 md:px-0 py-8 md:py-12 lg:py-20">
+      <main className="container mx-auto px-4 md:px-6 py-8 lg:px-10 md:py-12 lg:py-20">
         <div className="flex flex-col items-center justify-center">
           <h2
             className="font-Title font-normal text-2xl md:text-4xl md:leading-[48px] lg:text-5xl  lg:leading-[60px] xl:text-[54px] xl:leading-[71px] text-white mb-7 "

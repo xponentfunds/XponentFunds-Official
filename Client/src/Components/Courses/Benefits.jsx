@@ -46,7 +46,7 @@ function Benefits() {
   ];
   return (
     <section className="bg-[#201E1E] relative overflow-hidden ">
-      <main className="mx-auto container  px-4 md:px-0 py-12 md:py-24">
+      <main className="mx-auto container  px-4 md:px-6 py-12 md:py-24 lg:px-10">
         <div className="flex flex-col items-center justify-center">
           <h2
             className="font-Title text-center text-2xl md:text-3xl lg:text-4xl xl:text-[45px] xl:leading-[70px]  text-white mb-7"

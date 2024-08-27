@@ -111,3 +111,8 @@
   .blogcss{
     width: 100%;
   }
+
+  body.overflow-hidden {
+    overflow: hidden !important;
+  }
+  

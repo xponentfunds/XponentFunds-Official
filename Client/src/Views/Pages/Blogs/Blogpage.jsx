@@ -18,7 +18,7 @@ const BlogPage = () => {
           content="blog, latest insights, industry updates, expert opinions, articles, news, tips"
         />
       </Helmet>
-      <div className="bg-black py-20 md:py-28 px-5 md:px-0">
+      <div className="bg-black py-20 md:py-28 px-5 md:px-6 lg:px-10">
         <div className="container mx-auto ">
           {blogs.map((blog) => (
             <div key={blog.id} className="flex flex-col gap-5 md:gap-10">

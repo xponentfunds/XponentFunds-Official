@@ -98,7 +98,7 @@ function Efforts() {
   return (
     <section className="bg-[#201E1E]  overflow-hidden">
       <main className="container mx-auto">
-        <div class="flex items-center px-5 md:px-0 pt-8 md:pt-16">
+        <div class="flex items-center px-5 md:px-6 pt-8 md:pt-16 lg:px-10">
           <span class="pr-10 pb-12    font-bold font-Title text-2xl md:text-3xl lg:text-4xl lg:leading-[45px] xl:text-[45px] xl:leading-[58px] text-white ">
             Our Efforts <br /> Recognised By
           </span>

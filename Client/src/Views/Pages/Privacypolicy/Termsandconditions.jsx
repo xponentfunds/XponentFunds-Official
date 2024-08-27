@@ -5,7 +5,7 @@ import React from "react";
 const TermsAndConditions = () => {
   return (
     <section className=" bg-black ">
-      <div className=" text-white font-poppins container mx-auto px-5 md:px-5 py-24 md:py-32">
+      <div className=" text-white font-poppins container mx-auto px-5 md:px-5 lg:px-10 py-24 md:py-32">
         <h1 className="text-4xl font-bold mb-4">Terms and Conditions</h1>
 
         <p className="mb-4">Welcome to Xponent Funds!</p>

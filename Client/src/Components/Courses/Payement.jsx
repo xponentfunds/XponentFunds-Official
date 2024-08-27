@@ -77,7 +77,7 @@ function Payement() {
   ];
   return (
     <section className="bg-[#201E1E] relative overflow-hidden ">
-      <main className="mx-auto container  px-4 md:px-0 py-8 md:py-12 lg:py-20">
+      <main className="mx-auto container  px-4 md:px-6 py-8 md:py-12 lg:py-20 lg:px-10">
         <div className="flex flex-col items-center justify-center">
           <h2
             className="font-Title text-center text-3xl md:text-4xl lg:text-5xl lg:leading-[70px]  text-white mb-7"
@@ -262,7 +262,7 @@ function Payement() {
                 <div data-aos="zoom-in-up" data-aos-duration="1000">
                   <div
                     key={idx}
-                    className={`flex flex-col  py-5 px-6  rounded-2xl  hover:shadow-lg hover:-translate-y-3 transition-transform duration-300 ease-in-out transform group text-white bg-[#B7D8FF17] bg-opacity-10 text-white" hover:bg-white  hover:text-black h-full w-full
+                    className={ ` justify-between flex flex-col  py-5 px-6  rounded-2xl  hover:shadow-lg hover:-translate-y-3 transition-transform duration-300 ease-in-out transform group text-white bg-[#B7D8FF17] bg-opacity-10 text-white" hover:bg-white  hover:text-black h-full w-full
                  `}
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}

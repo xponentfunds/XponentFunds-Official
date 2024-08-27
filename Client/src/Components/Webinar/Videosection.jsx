@@ -10,10 +10,10 @@ function Videosection() {
   };
   return (
     <div className="bg-[#201E1E]">
-      <section className="container mx-auto px-5 md:px-0 pt-[550px] md:pt-20  pb-10 md:pb-28">
+      <section className="container mx-auto px-5 md:px-6 lg:px-10 pt-[550px] md:pt-20 lg:pt-28 xl:pt-20 pb-10 md:pb-28">
         <div className="flex justify-center">
           <h2
-            className="font-Title font-normal text-2xl md:text-4xl md:leading-[48px] lg:text-5xl  lg:leading-[60px] xl:text-[54px] xl:leading-[71px] text-white mb-7 md:mb-14 lg:mb-28 "
+            className="font-Title font-normal text-2xl md:text-4xl md:leading-[48px] lg:text-5xl  lg:leading-[60px] xl:text-[54px] xl:leading-[71px] text-white mb-7 md:mb-14 lg:mb-0 xl:mb-28  2xl:mb-48 text-center"
             data-aos="fade-down"
             data-aos-duration="1000"
           >

@@ -52,7 +52,7 @@ function Webinarintro() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="mx-auto container  px-4 md:px-0 ">
+        <div className="mx-auto container  px-4 md:px-6 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10">
             <div className="flex ">
               <div className="flex flex-col gap-2 md:gap-5 lg:gap-8 text-white ">

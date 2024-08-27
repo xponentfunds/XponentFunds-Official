@@ -47,7 +47,7 @@ function Lifechanging() {
   ];
   return (
     <section className="bg-[#201E1E] overflow-hidden ">
-      <main className="container mx-auto px-4 md:px-0 py-12 md:py-24">
+      <main className="container mx-auto px-4 md:px-6 py-12 md:py-24 lg:px-10">
         <div className="flex flex-col gap-2 md:gap-5 justify-center items-center">
           <h2
             className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl xl:leading-[70px] font-Title text-white text-center"

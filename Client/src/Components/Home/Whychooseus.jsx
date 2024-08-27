@@ -31,7 +31,7 @@ function Whychooseus() {
   ];
   return (
     <section className="bg-[#201E1E] overflow-hidden ">
-      <main className="container mx-auto px-4 md:px-0 py-8 md:py-12 lg:py-20">
+      <main className="container mx-auto px-4 md:px-6 py-8 md:py-12 lg:py-20 lg:px-10">
         <div className="flex flex-col items-center justify-center mb-12 md:mb-20">
           <h2
             className=" text-2xl md:text-3xl lg:text-4xl xl:text-[45px] text-center font-Title text-white mb-7"

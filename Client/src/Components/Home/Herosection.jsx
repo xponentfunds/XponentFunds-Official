@@ -14,7 +14,7 @@ function Herosection() {
   return (
     <>
       <section className="bg-[#201E1E] relative  overflow-hidden ">
-        <div className="grid grid-cols-1 md:grid-cols-3  container mx-auto px-4 md:px-0 pt-28 md:pt-48  lg:pt-64 pb-28 md:pb-32 lg:pb-44">
+        <div className="grid grid-cols-1 md:grid-cols-3  container mx-auto px-4 md:px-6 lg:px-10 pt-28 md:pt-48  lg:pt-64 pb-28 md:pb-32 lg:pb-44">
           <div className="col-span-2">
             <div className="flex flex-col gap-7">
               <h1 className="font-Title  text-2xl  leading-[45px] md:leading-[55px] md:text-3xl lg:text-4xl xl:text-[45px] lg:leading-[68px] font-normal text-white">
@@ -52,7 +52,7 @@ function Herosection() {
               </button> */}
             </div>
           </div>
-          <div className="h-[450px] md:h-0">
+          <div className="h-[450px]  md:h-0 block sm:hidden md:block">
             <LazyLoadImage
               src={tradesvg}
               PlaceholderSrc={blurtrade1}

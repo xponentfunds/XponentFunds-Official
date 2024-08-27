@@ -86,7 +86,7 @@ function Courses() {
 
   return (
     <section className="bg-[#201E1E] relative overflow-hidden ">
-      <main className="mx-auto container  px-4 md:px-0 py-8 md:py-12 lg:py-20">
+      <main className="mx-auto container  px-4 md:px-6 lg:px-10 py-8 md:py-12 lg:py-20">
         <div className="flex flex-col items-center justify-center">
           <h2
             className="font-Title text-2xl md:text-3xl lg:text-4xl xl:text-[45px] text-white mb-7"

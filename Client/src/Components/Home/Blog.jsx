@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Blog() {
   return (
     <section className="bg-[#000000] overflow-hidden ">
-      <main className=" mx-auto container px-4 md:px-0 py-12 md:py-24">
+      <main className=" mx-auto container px-4 md:px-6 py-12 md:py-24 lg:px-10">
         <div className="border-b border-white border-opacity-65">
           <h2
             className="font-Title custom-text text:lg md:text-2xl"

@@ -4,7 +4,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const BlogCard = ({ blog }) => {
   return (
-    <div className="flex flex-col md:flex-row  bg-[#201E1E] shadow-md rounded-lg p-4 mt-5 md:mt-10">
+    <div className="flex flex-col md:flex-row  bg-[#201E1E] shadow-md rounded-lg p-4  mt-5 md:mt-10">
       <span className="w-full  md:w-1/3">
         <LazyLoadImage
           src={blog.image}

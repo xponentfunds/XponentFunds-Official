@@ -46,7 +46,7 @@ function Banner() {
   ];
   return (
     <section className="bg-black overflow-hidden ">
-      <main className="mx-auto container py-8 md:py-16 lg:py-20 xl:py-24 px-4 md:px-0 ">
+      <main className="mx-auto container py-8 md:py-16 lg:py-20 xl:py-24 px-4 md:px-6 lg:px-10">
         <div className="grid  grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           {bannerData.map((data, idx) => {
             return (

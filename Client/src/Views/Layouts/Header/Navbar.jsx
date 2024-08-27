@@ -41,7 +41,7 @@ function Navbar() {
     <>
       <section className="bg-transparent absolute top-0 z-10 min-w-full ">
         <nav
-          className={`px-4 md:px-0  container mx-auto navbar-transition py-2 flex justify-between items-center  transition-all duration-500 ease-in-out `}
+          className={`px-4 md:px-6 lg:px-10  container mx-auto navbar-transition py-2 flex justify-between items-center  transition-all duration-500 ease-in-out `}
         >
           <div className="flex items-center">
             <a href="/">
@@ -83,25 +83,25 @@ function Navbar() {
               {["HOME", "WEBINAR", "COURSE", "CONTACT", "BLOG"].map(
                 (link, index) => (
                   <li>
-                  <Link
-                    to={linkPaths[link]}
-                    className={`font-Title font-normal text-base transition-all duration-300 ease-in-out ${
-                      hoveredIndex === index
-                        ? "bg-white rounded-[40px] px-4 py-2"
-                        : "text-white"
-                    }`}
-                    onClick={() => handleLinkClickk()}
-                    onMouseEnter={() => setHoveredIndex(index)}
-                    onMouseLeave={() => setHoveredIndex(null)}
-                  >
-                    <span
-                      className={
-                        hoveredIndex === index ? "custom-text" : "text-white"
-                      }
+                    <Link
+                      to={linkPaths[link]}
+                      className={`font-Title font-normal text-base transition-all duration-300 ease-in-out ${
+                        hoveredIndex === index
+                          ? "bg-white rounded-[40px] px-4 py-2"
+                          : "text-white"
+                      }`}
+                      onClick={() => handleLinkClickk()}
+                      onMouseEnter={() => setHoveredIndex(index)}
+                      onMouseLeave={() => setHoveredIndex(null)}
                     >
-                      {link}
-                    </span>
-                  </Link>
+                      <span
+                        className={
+                          hoveredIndex === index ? "custom-text" : "text-white"
+                        }
+                      >
+                        {link}
+                      </span>
+                    </Link>
                   </li>
                 )
               )}

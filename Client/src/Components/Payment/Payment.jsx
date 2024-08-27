@@ -71,7 +71,7 @@ const Payment = () => {
   };
 
   return (
-    <section className="bg-[#201E1E] px-5 md:px-0 py-20 md:py-32">
+    <section className="bg-[#201E1E] px-5 md:px-6 py-20 md:py-32">
       <div className="container mx-auto flex justify-center">
         <form
           onSubmit={handleSubmit}

@@ -54,7 +54,7 @@ function Courses() {
   ];
   return (
     <section className="bg-[#201E1E] overflow-hidden ">
-      <main className="mx-auto container px-4 md:px-0 py-12 md:py-24">
+      <main className="mx-auto container px-4 md:px-6 py-12 md:py-24 lg:px-10">
         <div className="mb-12 md:mb-20 flex flex-col justify-center items-center">
           <h2
             className="mb-7 text-2xl md:text-3xl lg:text-4xl xl:text-[45px] text-center font-Title custom-text"
