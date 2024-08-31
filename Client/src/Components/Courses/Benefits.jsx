@@ -119,7 +119,7 @@ function Benefits() {
 
           <div className="md:w-[60%] flex flex-col p-6 md:p-10 lg:p-14 bg-[#303030BF] rounded-xl bg-opacity-75 gap-3 md:gap-6 mt-8 md:mt-0">
             <h3
-              className="font-Title text-2xl md:text-3xl lg:text-4xl xl:text-[45px] text-white"
+              className="font-Title text-2xl md:text-3xl lg:text-4xl xl:text-[45px] xl:leading-[60px] text-white"
               data-aos="zoom-in"
               data-aos-duration="1000"
             >
@@ -154,21 +154,21 @@ function Benefits() {
                   data-aos="zoom-in-up"
                   data-aos-duration="1000"
                 >
-                  Apply Now
+                  Enroll Now
                 </button>
               </Link>
               <a
-                  href="https://wa.me/918900177062?text=Hey%2C%20I%20have%20a%20query"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-              <button
-                className="xl:text-xl text-base md:text-lg  py-1 md:py-2 px-4 md:px-5 font-Title  text-white rounded-[45px] border-white border-2"
-                data-aos="zoom-in-up"
-                data-aos-duration="1000"
+                href="https://wa.me/918900177062?text=Hey%2C%20I%20have%20a%20query"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Enquire
-              </button>
+                <button
+                  className="xl:text-xl text-base md:text-lg  py-1 md:py-2 px-4 md:px-5 font-Title  text-white rounded-[45px] border-white border-2"
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000"
+                >
+                  Enquire
+                </button>
               </a>
             </div>
           </div>

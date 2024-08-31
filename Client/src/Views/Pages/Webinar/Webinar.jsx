@@ -7,10 +7,10 @@ import Challenges from "../../../Components/Webinar/Challenges";
 import Certification from "../../../Components/Webinar/Certification";
 import Timer from "../../../Components/Webinar/Timer";
 import FAQ from "../../../Components/Webinar/FAQ";
-import Testimonials from "../../../Components/Webinar/Testimonials";
 import Efforts from "../../../Components/Courses/Efforts";
 import FloatingBar from "./Floatingbar";
 import { Helmet } from "react-helmet";
+import Testimonials from "../../../Components/Webinar/Testimonialswebinar";
 
 function Webinar() {
   return (
@@ -37,7 +37,7 @@ function Webinar() {
       <Efforts />
       <Lifechanging />
       <Challenges />
-      <Testimonials />
+      <Testimonials/>
       <div id="faq-section">
         <FAQ />
       </div>

@@ -304,7 +304,7 @@ function Payement() {
                             hoveredIndex === idx ? "btn" : "btnwhite"
                           }`}
                         >
-                          Buy Now
+                          Enroll Now
                         </button>
                       </Link>
                     ) : (

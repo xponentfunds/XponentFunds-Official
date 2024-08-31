@@ -6,10 +6,11 @@
     white-space: nowrap;
     position: relative;
     .marqueewrapper1 {
-      animation: scroll 180s linear infinite;
+      animation: scroll 100s linear infinite;
       display: flex;
       align-items: center;
       animation-play-state: running;
+      will-change: transform;
     }
     .logitem {
       min-width: 180px;

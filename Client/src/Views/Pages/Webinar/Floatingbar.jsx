@@ -25,17 +25,18 @@ const FloatingBar = () => {
 
   return (
     <div
-      className={`shadow-xl flex flex-col lg:flex-row  gap-2 md:gap-4 lg:gap-10 md:items-center fixed bottom-0 left-0 transform transition-transform duration-500 z-[100] bg-[#2C2C2C] p-5  lg:pl-10 xl:pl-20  md:py-6 md:px-9 ${
+      className={`shadow-xl flex flex-col md:flex-row  gap-2 md:gap-4 lg:gap-10 md:items-center fixed bottom-4 left-0 transform transition-transform duration-500 z-[100] bg-[#2C2C2C] p-5  lg:pl-10 xl:pl-20  md:py-6 md:px-9 ${
         isVisible ? "translate-x-0" : "-translate-x-full"
       }`}
       style={{ borderRadius: "40px 72px 72px 0px" }}
     >
       <div className="flex flex-col gap-1 md:gap-5">
-        <h3 className=" font-Title text-xl md:text-3xl lg:text-4xl text-white">
+        <h3 className="hidden sm:block font-Title text-xl md:text-3xl lg:text-4xl text-white">
           Join Us Now
         </h3>
+       
         <h5 className=" font-poppins text-xs md:text-base lg:text-lg text-[#C1C1C1]">
-          Hurry up and get the best course out there for your career.
+          Hurry up and enroll in our webinar!
         </h5>
       </div>
       <div className="flex gap-2 md:gap-4">

@@ -104,24 +104,24 @@ function Contact() {
           content="contact us, customer support, get in touch, contact information, customer service"
         />
       </Helmet>
-      <div className="bg-[#201E1E] pt-20 md:pt-28">
+      <div className="bg-[#201E1E] pt-16 md:pt-20 lg:pt-28">
         <section
-          className="h-[350px] md:h-[450px] lg:h-[480px]  w-full relative  "
-          style={{
-            backgroundImage: `url(${bg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
+          className=" "
+          // style={{
+          //   backgroundImage: `url(${bg})`,
+          //   backgroundSize: "cover",
+          //   backgroundPosition: "center",
+          //   backgroundRepeat: "no-repeat",
+          // }}
         >
-          <div className="mx-auto container py-12 md:py-24 px-4 md:px-6 lg:px-10 flex justify-center items-center h-full ">
+          <div className="mx-auto container py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-10 flex justify-center items-center h-full ">
             <h1 className="font-Title text-2xl md:text-3xl lg:text-4xl xl:text-[45px] text-white ">
-              Contact us
+            <span className="custom-text">Contact us</span> 
             </h1>
           </div>
         </section>
       </div>
-      <section className="bg-[#201E1E] py-12 md:py-24 px-4 md:px-6 lg:px-10">
+      <section className="bg-[#201E1E] py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 mx-auto container gap-12 md:gap-24">
           <div className="order-2 md:order-1 flex flex-col gap-3 md:gap-6 lg:gap-9 bg-contact-linear rounded-[25px] px-5 md:px-9 py-8 md:py-14 text-white">
             <h2 className="font-Title text-2xl md:text-3xl lg:text-4xl">

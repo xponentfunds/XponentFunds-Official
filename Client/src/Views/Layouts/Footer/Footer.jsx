@@ -170,11 +170,17 @@ function Footer() {
       </div>
       <div className=" bg-black container mx-auto">
         <div className="flex flex-row justify-between font-poppins text-xs md:text-base md:leading-[24px]  opacity-50 border-t border-[#ffffff] py-4 gap-2 px-4 md:px-6 lg:px-10">
-          <p className="opacity-90 text-white flex justify-center">
-            2024 All rights reserved 
+          <p className="opacity-80 text-white flex justify-center">
+            2024 All rights reserved
           </p>
-          <p className="opacity-90 text-white flex justify-center">
-          &copy; REDMOTIONTECH
+          <p className="opacity-80 text-white flex justify-center cursor-pointer hover:opacity-100">
+            <a
+              href="https://redmotionlab.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              &copy; REDMOTIONTECH
+            </a>
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Certification() {
   return (
     <section
-      className="h-[750px] md:h-[550px]  lg:h-[580px]  w-full relative  "
+      className="h-[760px] md:h-[550px]  lg:h-[580px]  w-full relative  "
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
@@ -16,7 +16,7 @@ function Certification() {
       }}
     >
       <div className="mx-auto container py-12 px-4 md:px-6 md:py-24 lg:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2  md:gap-10">
           <div className="order-2 md:order-1  flex justify-center md:justify-start  mt-6 md:mt-0">
             <LazyLoadImage
               src={certificate}

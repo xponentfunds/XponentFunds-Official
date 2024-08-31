@@ -16,7 +16,7 @@ function Intro() {
       <section className="block md:hidden ">
         <div className="flex flex-col gap-4  text-white justify-center items-center">
           <button
-            className="font-Title text-sm md:text-lg lg:text-xl rounded-[50px] px-4 md:px-5 bg-white bg-opacity-15 py-2 md:py-4 self-center  "
+            className="font-Title text-sm md:text-lg lg:text-xl rounded-[50px] px-4 md:px-5 bg-white bg-opacity-15 py-2 md:py-4 self-center "
             data-aos="fade-down"
             data-aos-duration="1000"
           >
@@ -52,8 +52,8 @@ function Intro() {
             skills, this course is for you.
           </p>
           <Link to="/paymentbundleplan">
-            <button className="btncustom  group self-center ">
-              <span className="custom-text  ">Apply Now</span>
+            <button className="btncustom  group self-center relative z-10 ">
+              <span className="custom-text  ">Enroll Now</span>
             </button>
           </Link>
         </div>
@@ -83,7 +83,7 @@ function Intro() {
                 Enhance Your Career
               </button>
               <h1
-                className="font-Title  text-2xl md:text-3xl lg:text-4xl xl:text-[45px]  "
+                className="font-Title  text-2xl md:text-3xl lg:text-4xl xl:text-[45px] xl:leading-[60px]  "
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
@@ -102,7 +102,7 @@ function Intro() {
               </p>
               <Link to="/paymentbundleplan">
                 <button className="btncustom  group self-start relative z-50 ">
-                  <span className="custom-text  ">Apply Now</span>
+                  <span className="custom-text  ">Enroll Now</span>
                 </button>
               </Link>
             </div>

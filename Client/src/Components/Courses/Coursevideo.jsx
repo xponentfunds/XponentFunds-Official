@@ -8,7 +8,7 @@ function Coursevideo() {
   };
   return (
     <div className="bg-[#201E1E]">
-      <section className="container mx-auto px-5 md:px-6  lg:px-10 py-8 md:py-12 lg:py-28">
+      <section className="container mx-auto px-5 md:px-6  lg:px-10 py-8 md:py-12 lg:py-28 2xl:pb-40">
         <div className="flex justify-center">
           <h2
             className="font-Title font-normal text-2xl md:text-4xl md:leading-[48px] lg:text-5xl  lg:leading-[60px] xl:text-[54px] xl:leading-[71px] text-white mb-7  md:mb-14 lg:mb-28 2xl:mb-48 text-center"

@@ -7,7 +7,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 function Coursecertificate() {
   return (
     <section
-      className="h-[650px] md:h-[550px]  lg:h-[580px]  w-full relative  "
+      className="h-[650px] sm:h-[700px] md:h-[450px]  lg:h-[580px]  w-full relative "
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
@@ -16,14 +16,14 @@ function Coursecertificate() {
       }}
     >
       <div className="mx-auto container py-12 px-4 md:px-6 md:py-24 lg:px-10 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2  md:gap-10">
           <div className="order-2 md:order-1  flex justify-center md:justify-start  mt-6 md:mt-0">
             <LazyLoadImage
               src={certificate}
               alt=""
               data-aos="fade-right"
               data-aos-duration="1000"
-              className="h-auto md:h-auto  "
+              className="h-auto relative md:h-auto  "
             />
           </div>
           <div className="order-1 md:order-2 flex items-center">
@@ -52,7 +52,7 @@ function Coursecertificate() {
                     data-aos="zoom-in-up"
                     data-aos-duration="1000"
                   >
-                    Apply Now
+                    Enroll Now
                   </button>
                 </Link>
                 <a
