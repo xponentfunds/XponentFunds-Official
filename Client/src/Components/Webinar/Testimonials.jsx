@@ -149,7 +149,7 @@ function Testimonials() {
                     <p className="text-left font-poppins text-sm md:text-base  text-[#B0B0B0] mb-4 text-wrap">
                       {testimonial.description}
                     </p>
-                    <div className="flex justify-between items-center">
+                    <div className="flex flex-col md:flex-row justify-between items-center">
                       <div className="flex gap-2 items-center">
                         <svg
                           width="30"
@@ -166,12 +166,6 @@ function Testimonials() {
                           <circle cx="15" cy="9" r="3.5" stroke="black" />
                         </svg>
 
-                        {/* <img
-                        src={testimonial.img}
-                        alt={testimonial.name}
-                        className=" rounded-full mx-auto mb-4"
-                      /> */}
-
                         <h3 className="text-base md:text-lg lg:text-xl font-semibold text-white font-poppins ">
                           {testimonial.name}
                         </h3>
@@ -181,14 +175,6 @@ function Testimonials() {
                       </h5>
                     </div>
                   </div>
-                  // <div key={obj.id} className="logitem ">
-                  //   <img
-                  //     src={obj.logo}
-                  //     alt=""
-                  //     className="logo "
-                  //     effect="blue"
-                  //   />
-                  // </div>
                 );
               })}
             </div>
