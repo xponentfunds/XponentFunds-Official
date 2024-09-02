@@ -120,7 +120,7 @@ function Testimonials() {
                     <p className="text-left font-poppins text-sm md:text-base  text-[#B0B0B0] mb-4 text-wrap">
                       {testimonial.description}
                     </p>
-                    <div className="flex flex-col md:flex-row justify-between items-center">
+                    <div className="flex flex-col md:flex-row justify-between md:items-center items-start">
                       <div className="flex gap-2 items-center">
                         <svg
                           width="30"
@@ -141,7 +141,7 @@ function Testimonials() {
                           {testimonial.name}
                         </h3>
                       </div>
-                      <h5 className="font-poppins md:text-base text-xs lg:text-lg text-white">
+                      <h5 className="font-poppins md:text-base text-xs lg:text-lg text-white ml-10 md:ml-0">
                         {testimonial.date}
                       </h5>
                     </div>

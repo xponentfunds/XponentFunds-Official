@@ -122,7 +122,7 @@ function Webinarintro() {
               </div>
             </div>
             <div className="flex  relative h-[450px] md:h-auto ">
-              <div className="bg-white rounded-xl p-1 md:p-3 floating absolute bottom-1/4 md:bottom-2/4  right-0 z-50 text-center">
+              <div className="bg-white rounded-xl p-1 md:p-3 floating absolute bottom-1/4 md:bottom-2/4  right-0 sm:right-1/4 md:right-0 z-50 text-center">
                 <h3 className="text-black font-poppins font-medium text-xl md:text-2xl lg:text-3xl mb-2">
                   <CountUpOnView start={0} end={307} duration={3} suffix="+" />
                 </h3>
@@ -130,7 +130,7 @@ function Webinarintro() {
                   Students
                 </h5>
               </div>
-              <div className="bg-white rounded-xl p-1 md:p-3 floating absolute bottom-0 md:bottom-1/4 right-0 z-50 text-center">
+              <div className="bg-white rounded-xl p-1 md:p-3 floating absolute bottom-0 md:bottom-1/4 right-0 sm:right-1/4 md:right-0 z-50 text-center">
                 <h3 className="text-black font-poppins font-medium text-xl md:text-2xl lg:text-3xl mb-2">
                   <CountUpOnView start={0} end={5893} duration={3} suffix="+" />
                 </h3>
@@ -142,7 +142,7 @@ function Webinarintro() {
               <LazyLoadImage
                 src={img1}
                 alt="Computer"
-                className="absolute bottom-0 md:bottom-[20%] z-40   xl:right-1/3 w-48 md:w-52 lg:w-64 xl:w-auto"
+                className="absolute bottom-0 md:bottom-[20%] z-40   xl:right-1/3 w-48 sm:w-56 md:w-52 lg:w-64 xl:w-auto"
               />
               <LazyLoadImage
                 data-aos="zoom-in-up"
@@ -150,7 +150,7 @@ function Webinarintro() {
                 ata-aos-offset="0"
                 src={hand}
                 alt="Hand with Mobile Phone"
-                className="absolute w-[220px] h-[350px] md:w-[300px] md:h-[500px] lg:h-auto lg:w-auto xl:h-auto xl:w-auto md:right-0 lg:right-1/4 bottom-[10%] md:-top-[15%] z-0 "
+                className="absolute w-[220px]  h-[350px] sm:w-[280px] sm:h-[380px]  md:w-[300px] md:h-[500px] lg:h-auto lg:w-auto xl:h-auto xl:w-auto md:right-0 lg:right-1/4 bottom-[10%] md:-top-[15%] z-0 "
               />
             </div>
           </div>

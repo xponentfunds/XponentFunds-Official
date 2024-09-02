@@ -145,11 +145,11 @@ function Testimonials() {
             <div className="marqueewrapper1">
               {[].concat(...Array(2).fill(userdata)).map((testimonial, idx) => {
                 return (
-                  <div className=" flex flex-col justify-between px-3 md:px-6 py-5 md:py-9 bg-black-gradient rounded-2xl border-[#565656] border-[1px]  w-[250px] h-[380px] md:w-[350px] md:h-[450px]  lg:w-[650px] lg:h-[280px]  mx-11">
+                  <div className=" flex flex-col justify-between px-3 md:px-6 py-5 md:py-9 bg-black-gradient rounded-2xl border-[#565656] border-[1px]  w-[250px] h-[400px] md:w-[350px] md:h-[450px]  lg:w-[650px] lg:h-[280px]  mx-11">
                     <p className="text-left font-poppins text-sm md:text-base  text-[#B0B0B0] mb-4 text-wrap">
                       {testimonial.description}
                     </p>
-                    <div className="flex flex-col md:flex-row justify-between items-center">
+                    <div className="flex  flex-col md:flex-row justify-between md:items-center items-start">
                       <div className="flex gap-2 items-center">
                         <svg
                           width="30"
@@ -170,7 +170,7 @@ function Testimonials() {
                           {testimonial.name}
                         </h3>
                       </div>
-                      <h5 className="font-poppins md:text-base text-xs lg:text-lg text-white">
+                      <h5 className="font-poppins md:text-base text-xs lg:text-lg text-white ml-10 md:ml-0">
                         {testimonial.date}
                       </h5>
                     </div>

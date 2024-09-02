@@ -106,8 +106,8 @@ function Benefits() {
             );
           })}
         </div>
-        <div className="flex flex-col md:flex-row mt-8 md:mt-16 lg:mt-24 xl:mt-28">
-          <div className="md:w-[40%]">
+        <div className="flex flex-col md:flex-row mt-8 md:mt-16 lg:mt-24 xl:mt-28 ">
+          <div className="md:w-[40%] flex justify-center">
             <LazyLoadImage
               src={unique}
               alt=""
