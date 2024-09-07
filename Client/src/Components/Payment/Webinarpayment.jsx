@@ -139,11 +139,11 @@ function Webinarpayment() {
             type="submit"
             className="self-start  flex gap-0.5 md:gap-3 items-center font-Title text-base md:text-lg xl:text-xl bg-custom-gradient rounded-[45px] px-3 py-2 md:px-7 md:py-4 text-white hover:bg-gradient-to-r transition-all duration-300 ease-in-out hover:scale-105"
           >
-            Pay Now
+            Enroll Now
           </button>
         </form>
       </div>
-      <ToastContainer />  
+      <ToastContainer />
     </section>
   );
 }

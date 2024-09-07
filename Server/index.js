@@ -41,14 +41,72 @@ const contactSchema = new mongoose.Schema({
   phone: String,
   profession: String,
   experience: String,
+  createdAt: {
+    type: String,
+    default: () => {
+      // Get current time
+      const now = new Date();
+
+      // Convert UTC time to IST by adding the appropriate offset (5 hours and 30 minutes)
+      const ISTTime = new Date(
+        now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+      );
+
+      // Format the time to 12-hour format
+      let hours = ISTTime.getHours();
+      const minutes = ISTTime.getMinutes();
+      const ampm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12;
+      hours = hours ? hours : 12; // hour '0' should be '12'
+      const minutesStr = minutes < 10 ? "0" + minutes : minutes;
+
+      // Format the date to DD/MM/YYYY
+      const day = ISTTime.getDate();
+      const month = ISTTime.getMonth() + 1; // Months are zero-indexed in JavaScript
+      const year = ISTTime.getFullYear();
+
+      return `${hours}:${minutesStr} ${ampm}, ${day}/${month}/${year}`; // Return formatted time and date
+    },
+  },
 });
 
 // Define a model
 const Contact = mongoose.model("Contact", contactSchema);
 
+// const quickformSchema = new mongoose.Schema({
+//   name: String,
+//   phone: String,
+// });
 const quickformSchema = new mongoose.Schema({
   name: String,
   phone: String,
+  createdAt: {
+    type: String,
+    default: () => {
+      // Get current time
+      const now = new Date();
+
+      // Convert UTC time to IST by adding the appropriate offset (5 hours and 30 minutes)
+      const ISTTime = new Date(
+        now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+      );
+
+      // Format the time to 12-hour format
+      let hours = ISTTime.getHours();
+      const minutes = ISTTime.getMinutes();
+      const ampm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12;
+      hours = hours ? hours : 12; // hour '0' should be '12'
+      const minutesStr = minutes < 10 ? "0" + minutes : minutes;
+
+      // Format the date to DD/MM/YYYY
+      const day = ISTTime.getDate();
+      const month = ISTTime.getMonth() + 1; // Months are zero-indexed in JavaScript
+      const year = ISTTime.getFullYear();
+
+      return `${hours}:${minutesStr} ${ampm}, ${day}/${month}/${year}`; // Return formatted time and date
+    },
+  },
 });
 
 const QuickForm = mongoose.model("QuickForm", quickformSchema);
@@ -63,7 +121,33 @@ const webinarPaymentSchema = new mongoose.Schema({
   email: { type: String, required: true },
   phone: { type: String, required: true },
   status: { type: String, required: true },
-  createdAt: { type: Date, default: Date.now },
+  createdAt: {
+    type: String,
+    default: () => {
+      // Get current time
+      const now = new Date();
+
+      // Convert UTC time to IST by adding the appropriate offset (5 hours and 30 minutes)
+      const ISTTime = new Date(
+        now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+      );
+
+      // Format the time to 12-hour format
+      let hours = ISTTime.getHours();
+      const minutes = ISTTime.getMinutes();
+      const ampm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12;
+      hours = hours ? hours : 12; // hour '0' should be '12'
+      const minutesStr = minutes < 10 ? "0" + minutes : minutes;
+
+      // Format the date to DD/MM/YYYY
+      const day = ISTTime.getDate();
+      const month = ISTTime.getMonth() + 1; // Months are zero-indexed in JavaScript
+      const year = ISTTime.getFullYear();
+
+      return `${hours}:${minutesStr} ${ampm}, ${day}/${month}/${year}`; // Return formatted time and date
+    },
+  },
 });
 
 const WebinarPayment = mongoose.model("WebinarPayment", webinarPaymentSchema);
@@ -77,7 +161,33 @@ const coursePaymentSchema = new mongoose.Schema({
   email: { type: String, required: true },
   phone: { type: String, required: true },
   status: { type: String, required: true },
-  createdAt: { type: Date, default: Date.now },
+  createdAt: {
+    type: String,
+    default: () => {
+      // Get current time
+      const now = new Date();
+
+      // Convert UTC time to IST by adding the appropriate offset (5 hours and 30 minutes)
+      const ISTTime = new Date(
+        now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+      );
+
+      // Format the time to 12-hour format
+      let hours = ISTTime.getHours();
+      const minutes = ISTTime.getMinutes();
+      const ampm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12;
+      hours = hours ? hours : 12; // hour '0' should be '12'
+      const minutesStr = minutes < 10 ? "0" + minutes : minutes;
+
+      // Format the date to DD/MM/YYYY
+      const day = ISTTime.getDate();
+      const month = ISTTime.getMonth() + 1; // Months are zero-indexed in JavaScript
+      const year = ISTTime.getFullYear();
+
+      return `${hours}:${minutesStr} ${ampm}, ${day}/${month}/${year}`; // Return formatted time and date
+    },
+  },
 });
 
 const CoursePayment = mongoose.model("CoursePayment", coursePaymentSchema);
@@ -91,7 +201,33 @@ const webinarFailedPaymentSchema = new mongoose.Schema({
   email: { type: String, required: true },
   phone: { type: String, required: true },
   status: { type: String, required: true },
-  createdAt: { type: Date, default: Date.now },
+  createdAt: {
+    type: String,
+    default: () => {
+      // Get current time
+      const now = new Date();
+
+      // Convert UTC time to IST by adding the appropriate offset (5 hours and 30 minutes)
+      const ISTTime = new Date(
+        now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+      );
+
+      // Format the time to 12-hour format
+      let hours = ISTTime.getHours();
+      const minutes = ISTTime.getMinutes();
+      const ampm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12;
+      hours = hours ? hours : 12; // hour '0' should be '12'
+      const minutesStr = minutes < 10 ? "0" + minutes : minutes;
+
+      // Format the date to DD/MM/YYYY
+      const day = ISTTime.getDate();
+      const month = ISTTime.getMonth() + 1; // Months are zero-indexed in JavaScript
+      const year = ISTTime.getFullYear();
+
+      return `${hours}:${minutesStr} ${ampm}, ${day}/${month}/${year}`; // Return formatted time and date
+    },
+  },
 });
 
 const WebinarFailedPayment = mongoose.model(
@@ -108,7 +244,33 @@ const courseFailedPaymentSchema = new mongoose.Schema({
   email: { type: String, required: true },
   phone: { type: String, required: true },
   status: { type: String, required: true },
-  createdAt: { type: Date, default: Date.now },
+  createdAt: {
+    type: String,
+    default: () => {
+      // Get current time
+      const now = new Date();
+
+      // Convert UTC time to IST by adding the appropriate offset (5 hours and 30 minutes)
+      const ISTTime = new Date(
+        now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+      );
+
+      // Format the time to 12-hour format
+      let hours = ISTTime.getHours();
+      const minutes = ISTTime.getMinutes();
+      const ampm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12;
+      hours = hours ? hours : 12; // hour '0' should be '12'
+      const minutesStr = minutes < 10 ? "0" + minutes : minutes;
+
+      // Format the date to DD/MM/YYYY
+      const day = ISTTime.getDate();
+      const month = ISTTime.getMonth() + 1; // Months are zero-indexed in JavaScript
+      const year = ISTTime.getFullYear();
+
+      return `${hours}:${minutesStr} ${ampm}, ${day}/${month}/${year}`; // Return formatted time and date
+    },
+  },
 });
 
 const CourseFailedPayment = mongoose.model(
@@ -116,11 +278,90 @@ const CourseFailedPayment = mongoose.model(
   courseFailedPaymentSchema
 );
 
+const courseDataSchema = new mongoose.Schema({
+  amount: { type: Number, required: true },
+  productinfo: { type: String, required: true },
+  firstname: { type: String, required: true },
+  lastname: { type: String, required: true },
+  email: { type: String, required: true },
+  phone: { type: String, required: true },
+  createdAt: {
+    type: String,
+    default: () => {
+      // Get current time
+      const now = new Date();
+
+      // Convert UTC time to IST by adding the appropriate offset (5 hours and 30 minutes)
+      const ISTTime = new Date(
+        now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+      );
+
+      // Format the time to 12-hour format
+      let hours = ISTTime.getHours();
+      const minutes = ISTTime.getMinutes();
+      const ampm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12;
+      hours = hours ? hours : 12; // hour '0' should be '12'
+      const minutesStr = minutes < 10 ? "0" + minutes : minutes;
+
+      // Format the date to DD/MM/YYYY
+      const day = ISTTime.getDate();
+      const month = ISTTime.getMonth() + 1; // Months are zero-indexed in JavaScript
+      const year = ISTTime.getFullYear();
+
+      return `${hours}:${minutesStr} ${ampm}, ${day}/${month}/${year}`; // Return formatted time and date
+    },
+  },
+});
+
+// Create the model from the schema
+const CourseData = mongoose.model("CourseData", courseDataSchema);
+
+
+const WebinarDataSchema = new mongoose.Schema({
+  amount: { type: Number, required: true },
+  productinfo: { type: String, required: true },
+  firstname: { type: String, required: true },
+  lastname: { type: String, required: true },
+  email: { type: String, required: true },
+  phone: { type: String, required: true },
+  createdAt: {
+    type: String,
+    default: () => {
+      const now = new Date();
+      // Convert UTC time to IST by adding the appropriate offset (5 hours and 30 minutes)
+      const ISTTime = new Date(
+        now.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })
+      );
+
+      // Format the time to 12-hour format
+      let hours = ISTTime.getHours();
+      const minutes = ISTTime.getMinutes();
+      const ampm = hours >= 12 ? "PM" : "AM";
+      hours = hours % 12;
+      hours = hours ? hours : 12; // hour '0' should be '12'
+      const minutesStr = minutes < 10 ? "0" + minutes : minutes;
+
+      // Format the date to DD/MM/YYYY
+      const day = ISTTime.getDate();
+      const month = ISTTime.getMonth() + 1; // Months are zero-indexed in JavaScript
+      const year = ISTTime.getFullYear();
+
+      return `${hours}:${minutesStr} ${ampm}, ${day}/${month}/${year}`; // Return formatted time and date
+    },
+  },
+});
+
+// Create the model from the schema
+const WebinarData = mongoose.model("WebinarData", WebinarDataSchema);
+
+
 const generateHash = (txnid, amount, productinfo, firstname, email) => {
   const hashString = `${key}|${txnid}|${amount}|${productinfo}|${firstname}|${email}|||||||||||${salt}`;
   return crypto.createHash("sha512").update(hashString).digest("hex");
 };
 
+//Routes for Courses
 app.post("/payu", (req, res) => {
   const { amount, productinfo, firstname, lastname, email, phone } = req.body;
 
@@ -141,6 +382,18 @@ app.post("/payu", (req, res) => {
   //   surl,
   //   furl
   // );
+  const newCourseData = new CourseData({
+    amount,
+    productinfo,
+    firstname,
+    lastname,
+    email,
+    phone
+  });
+
+  // Save the document to MongoDB
+  newCourseData.save()
+
   res.json({
     key,
     txnid,
@@ -162,6 +415,18 @@ app.post("/payu/webinar", (req, res) => {
 
   const txnid = Math.random().toString(36).substr(2, 9);
   const hash = generateHash(txnid, amount, productinfo, firstname, email);
+
+  const newWebinarData = new WebinarData({
+    amount,
+    productinfo,
+    firstname,
+    lastname,
+    email,
+    phone
+  });
+
+  // Save the document to MongoDB
+  newWebinarData.save()
 
   res.json({
     key,
@@ -299,10 +564,10 @@ app.post("/failed", async (req, res) => {
     console.log("Failed Status:", status);
 
     // Redirect to a failure page on your frontend
-    res.redirect(`${frontendUrl}/courses`);
+    res.redirect(`${frontendUrl}/course`);
   } catch (err) {
     console.error("Error saving failed payment data:", err);
-    res.redirect(`${frontendUrl}/courses`);
+    res.redirect(`${frontendUrl}/course`);
   }
 });
 
@@ -354,13 +619,13 @@ app.post("/successcourses", async (req, res) => {
         status,
       });
       await coursePayment.save();
-      res.redirect(`${frontendUrl}/courses`);
+      res.redirect(`${frontendUrl}/course`);
     } catch (err) {
       console.error("Error saving payment data:", err);
-      res.redirect(`${frontendUrl}/courses`);
+      res.redirect(`${frontendUrl}/course`);
     }
   } else {
-    res.redirect(`${frontendUrl}/courses`);
+    res.redirect(`${frontendUrl}/course`);
   }
 });
 app.post("/api/contact", async (req, res) => {
