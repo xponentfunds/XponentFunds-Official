@@ -18,7 +18,7 @@ const Success = () => {
     const verifyToken = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/verify-token?token=${token}`
+          `${import.meta.env.VITE_API_BASE_URL}/verify-token?token=${token}`
         );
         console.log("Verification Response:", response.data);
 

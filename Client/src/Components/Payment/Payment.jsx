@@ -22,7 +22,7 @@ const Payment = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     const phoneRegex = /^\+?\d{10,12}$/;
     console.log(phoneRegex.test(formData.phone));
     if (!phoneRegex.test(formData.phone)) {
@@ -136,10 +136,38 @@ const Payment = () => {
             />
           </div>
 
-          <button
+          {/* <button
             type="submit"
             className="self-start  flex gap-0.5 md:gap-3 items-center font-Title text-base md:text-lg xl:text-xl bg-custom-gradient rounded-[45px] px-3 py-2 md:px-7 md:py-4 text-white hover:bg-gradient-to-r transition-all duration-300 ease-in-out hover:scale-105"
           >
+            Enroll Now
+            
+          </button> */}
+          <button
+            type="submit"
+            disabled={
+              !formData.firstname ||
+              !formData.lastname ||
+              !formData.email ||
+              !formData.phone
+            }
+            className={`self-start flex gap-0.5 md:gap-3 items-center font-Title text-base md:text-lg xl:text-xl rounded-[45px] px-3 py-2 md:px-7 md:py-4 text-white transition-all duration-300 ease-in-out hover:scale-105 ${
+              !formData.firstname ||
+              !formData.lastname ||
+              !formData.email ||
+              !formData.phone
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-custom-gradient hover:bg-gradient-to-r"
+            }`}
+            // onClick={() => console.log("Button Clicked!")}
+          >
+            {/* {console.log(
+              "Button Disabled:",
+              !formData.firstname ||
+                !formData.lastname ||
+                !formData.email ||
+                !formData.phone
+            )} */}
             Enroll Now
           </button>
         </form>

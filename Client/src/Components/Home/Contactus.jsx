@@ -340,9 +340,30 @@ function Contactus() {
                 </select>
               </div>
 
-              <button
+              {/* <button
                 type="submit"
                 className="self-start  flex gap-0.5 md:gap-3 items-center font-Title text-base md:text-lg xl:text-xl bg-custom-gradient rounded-[45px] px-3 py-2 md:px-7 md:py-4 text-white hover:bg-gradient-to-r transition-all duration-300 ease-in-out hover:scale-105"
+              >
+                Submit
+              </button> */}
+              <button
+                type="submit"
+                disabled={
+                  !formData.name ||
+                  !formData.email ||
+                  !formData.phone ||
+                  !formData.profession ||
+                  !formData.experience
+                }
+                className={`self-start flex gap-0.5 md:gap-3 items-center font-Title text-base md:text-lg xl:text-xl rounded-[45px] px-3 py-2 md:px-7 md:py-4 text-white transition-all duration-300 ease-in-out hover:scale-105 ${
+                  !formData.name ||
+                  !formData.email ||
+                  !formData.phone ||
+                  !formData.profession ||
+                  !formData.experience
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-custom-gradient hover:bg-gradient-to-r"
+                }`}
               >
                 Submit
               </button>
