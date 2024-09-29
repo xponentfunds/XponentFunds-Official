@@ -44,7 +44,7 @@ function Webinarintro() {
   return (
     <div className="bg-[#201E1E] py-20   md:py-32">
       <section
-        className="h-[300px] md:h-[500px] lg:h-[500px] xl:h-[620px]  w-full relative  bg-[#201E1E] py-8 md:py-14 "
+        className="h-[350px] md:h-[500px] lg:h-[500px] xl:h-[620px]  w-full relative  bg-[#201E1E] py-8 md:py-14 "
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
@@ -57,10 +57,11 @@ function Webinarintro() {
             <div className="flex ">
               <div className="flex flex-col gap-2 md:gap-5 lg:gap-8 text-white ">
                 <h1 className="font-Title  text-2xl md:text-[28px] md:leading-[35px] lg:text-4xl xl:text-[40px] xl:leading-[54px]  ">
-                  Turn the market in <br />
-                  your favour by mastering
-                  <span className="custom-text"> option </span>
-                  <span className="custom-text">trading</span>
+                  Master <span className="custom-text"> Option </span>
+                  <span className="custom-text">Trading</span> <br /> for Less
+                  Than the
+                  <br />
+                  Price of Your Daily Coffee!
                 </h1>
 
                 <h4 className="font-poppins text-[#C1C1C1] text-base md:text-lg">
@@ -96,7 +97,7 @@ function Webinarintro() {
                 <div className="flex gap-2 md:gap-4 mt-2 md:mt-4 lg:mt-6">
                   <div className=" flex flex-col gap-2 p-2 md:p-4 text-white bg-[#333333] rounded-xl">
                     <h5 className=" text-center text-lg md:text-2xl lg:text-3xl font-poppins">
-                      22nd Sep
+                      27th Oct
                     </h5>
                     <h6 className="font-Title text-xs md:text-sm text-center">
                       Date
@@ -121,7 +122,7 @@ function Webinarintro() {
                 </div>
               </div>
             </div>
-            <div className="flex  relative h-[450px] md:h-auto ">
+            <div className="md:flex  relative h-[450px] hidden md:h-auto ">
               <div className="bg-white rounded-xl p-1 md:p-3 floating absolute bottom-1/4 md:bottom-2/4  right-0 sm:right-1/4 md:right-0 z-50 text-center">
                 <h3 className="text-black font-poppins font-medium text-xl md:text-2xl lg:text-3xl mb-2">
                   <CountUpOnView start={0} end={307} duration={3} suffix="+" />

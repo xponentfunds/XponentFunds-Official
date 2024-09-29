@@ -15,7 +15,7 @@ function Coursevideo() {
             data-aos="fade-down"
             data-aos-duration="1000"
           >
-            A <span className="custom-text">Sneak Peek</span>, Just for You!
+            A <span className="custom-text">Message</span> for You
           </h2>
         </div>
         <div className="flex justify-center items-center  lg:h-[550px]  xl:h-[580px] ">

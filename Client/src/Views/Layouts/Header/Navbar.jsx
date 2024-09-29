@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import logo from "../../../assets/Images/Logo.png";
-import logo from "../../../assets/Images/logo1.png";
+// import logo from "../../../assets/Images/logo1.png";
+import logo from "../../../assets/Svg/navlogo.svg";
 import blurlogo from "../../../assets/Images/blurlogo.png";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -49,14 +50,10 @@ function Navbar() {
                 src={logo}
                 PlaceholderSrc={blurlogo}
                 effect="blur"
-                className={`h-[50px] sm:h-[60px] lg:h-[70px]`}
+                className={`h-[50px] sm:h-[60px] lg:h-[90px]`}
                 alt="Company Logo"
               />
-              {/* <img
-                src={logo}
-                alt="Logo"
-                className={`h-[50px] sm:h-[70px] lg:h-[80px]`}
-              /> */}
+            
             </a>
           </div>
           <div

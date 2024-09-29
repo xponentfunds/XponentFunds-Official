@@ -11,6 +11,7 @@ import Efforts from "../../../Components/Courses/Efforts";
 import FloatingBar from "./Floatingbar";
 import { Helmet } from "react-helmet";
 import Testimonials from "../../../Components/Webinar/Testimonialswebinar";
+import Whatsapp from "../../../Utilities/Whatsapp";
 
 function Webinar() {
   return (
@@ -37,10 +38,11 @@ function Webinar() {
       <Efforts />
       <Lifechanging />
       <Challenges />
-      <Testimonials/>
+      <Testimonials />
       <div id="faq-section">
         <FAQ />
       </div>
+      <Whatsapp/>
     </>
   );
 }
