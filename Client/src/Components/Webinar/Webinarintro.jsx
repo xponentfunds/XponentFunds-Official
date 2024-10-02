@@ -42,9 +42,9 @@ const CountUpOnView = ({ start = 0, end, duration = 3, ...props }) => {
 };
 function Webinarintro() {
   return (
-    <div className="bg-[#201E1E] py-20   md:py-32">
+    <div className="bg-[#201E1E] pt-20 pb-6   md:py-32">
       <section
-        className="h-[350px] md:h-[500px] lg:h-[500px] xl:h-[620px]  w-full relative  bg-[#201E1E] py-8 md:py-14 "
+        className=" md:h-[500px] lg:h-[500px] xl:h-[620px]  w-full relative  bg-[#201E1E]  md:py-14 "
         style={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",

@@ -27,21 +27,21 @@ function Benefits() {
       svg: award,
       hover: award1,
       description:
-        "After completing our programme, you will receive ₹60,000 worth of services and doubt clearance for a whole year. This priceless support is intended to aid you in easily navigating any obstacles or doubts that may surface during your stock market trip.",
+        "Our live classes provide a stimulating environment for learning. You will be able to interact with mentors, ask questions, and get feedback to improve your understanding and memorization of the subject matter.",
     },
     {
       id: 3,
       svg: live,
       hover: live1,
       description:
-        "After completing our programme, you will receive ₹60,000 worth of services and doubt clearance for a whole year. This priceless support is intended to aid you in easily navigating any obstacles or doubts that may surface during your stock market trip.",
+        "Our esteemed mentors will award you with a certificate once you finish the course. This recognition does not validate what you have learned. demonstrates your passion to learning the stock market as well as your dedication.",
     },
     {
       id: 4,
       svg: chat,
       hover: chat1,
       description:
-        "After completing our programme, you will receive ₹60,000 worth of services and doubt clearance for a whole year. This priceless support is intended to aid you in easily navigating any obstacles or doubts that may surface during your stock market trip.",
+        "We give our course graduates the chance to intern in order to further their education and experience. With this practical experience, you can apply your skills in a real-world setting, gaining insights and confidence in your stock market endeavors.",
     },
   ];
   return (
@@ -90,6 +90,7 @@ function Benefits() {
                   data-aos-delay={`${idx * 100}`}
                   onMouseEnter={() => setHoveredIndex(idx)}
                   onMouseLeave={() => setHoveredIndex(null)}
+                  className="flex"
                 >
                   <div className="rounded-xl bg-[#303030] bg-opacity-75 p-4 md:p-8 flex gap-5 flex-col group hover:bg-white  hover:bg-opacity-100 cursor-pointer">
                     <LazyLoadImage

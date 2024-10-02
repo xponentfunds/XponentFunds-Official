@@ -13,7 +13,7 @@ function Videosection() {
       <section className="container mx-auto px-5 md:px-6 lg:px-10 pt-8 md:pt-20 lg:pt-28 xl:pt-20 pb-10 xl:pb-28 2xl:pb-44 ">
         <div className="flex justify-center">
           <h2
-            className="font-Title font-normal text-2xl md:text-4xl md:leading-[48px] lg:text-5xl  lg:leading-[60px] xl:text-[54px] xl:leading-[71px] text-white mb-2 md:mb-14 lg:mb-0 xl:mb-28  2xl:mb-48 text-center"
+            className="font-Title font-normal text-2xl md:text-4xl md:leading-[48px] lg:text-5xl  lg:leading-[60px] xl:text-[54px] xl:leading-[71px] text-white mb-4 md:mb-14 lg:mb-0 xl:mb-28  2xl:mb-48 text-center"
             data-aos="fade-down"
             data-aos-duration="1000"
           >

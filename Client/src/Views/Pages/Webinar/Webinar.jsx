@@ -42,7 +42,7 @@ function Webinar() {
       <div id="faq-section">
         <FAQ />
       </div>
-      <Whatsapp/>
+      <Whatsapp />
     </>
   );
 }
